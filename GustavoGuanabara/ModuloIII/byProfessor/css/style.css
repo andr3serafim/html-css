@@ -5,14 +5,23 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
 
 html, body {
+    font-family: var(--fonte1);
     min-height: 100vh;
     background-color: rgb(184, 184, 184);
 }
 
 header {
+
     background-color: black;
     color: white;
     text-align: center;
@@ -20,7 +29,9 @@ header {
 
 header > h1 {
     padding-top: 50px;
+    font-family: var(--fonte2);
     font-variant: small-caps;
+    font-size: 10vh;
 }
 
 header > p {
@@ -44,6 +55,8 @@ footer {
 }
 
 section {
+    font-family: var(--fonte3);
+    font-size: 2.5vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -60,6 +73,7 @@ section {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
